@@ -1,0 +1,507 @@
+/*
+Design by Shoichi Mori 
+Start from 31/05/12
+http://www.shochimori.co,
+Released for Netbarin.inc in the name of friendship
+*/
+
+body {
+	margin: 0px;
+	padding: 0px;
+	background: #ECF0EC url(../img/carpet.png) repeat;
+	text-align: justify;
+	font-family: 'Arvo', serif;
+	font-size: 14px;
+	color: #303030;
+}
+
+h1, h2, h3 {
+	font: 1.82em;
+	font-weight: normal;
+	font-family: 'Arvo', serif;
+	letter-spacing: -2px;
+	font-weight: 400px;
+	color: #000000;
+}
+
+p, ol, ul {
+	line-height: 1.67em;
+	list-style: none;
+}
+
+a {
+	color: #303030;
+}
+
+a:hover {
+	text-decoration: none;
+}
+
+hr {
+	display: none;
+}
+/*-----------------------------*
+ * Header 
+ *-----------------------------*/
+#header {
+	width: 1000px;
+	height: 150px;
+	margin: 0px auto;
+	z-index:2;
+	position:relative;
+}
+
+/* Header line with shadow */
+#header-line{
+	width: 970px;
+	margin: 20px 15px 0px 15px;
+	border-bottom: 5px solid black;
+	-moz-box-shadow: 3px 3px 4px #000;
+	-webkit-box-shadow: 3px 3px 4px #000;
+	box-shadow: 3px 3px 4px #000;
+	/* For IE 8 */
+	-ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=135, Color='#000000')";
+	/* For IE 5.5 - 7 */
+	filter: progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=135, Color='#000000');
+}
+
+/* Logo */
+#logo {
+	float: left;
+	padding: 0 0 0 115px;
+}
+
+#logo #logo_image {
+	margin: 0;
+	height: 80px;
+	padding: 20px 0 0 0px;
+}
+
+#logo a {
+	display: block;
+	text-decoration: none;
+	color: #000000;
+}
+
+#logo p {
+	margin: 0px 0 0 2px;
+	text-align:center;
+	/** font-family: Tahoma, Arial, Helvetica, sans-serif; **/
+	font-family:'ÉqÉâÉMÉmäpÉS Pro W3','Hiragino Kaku Gothic Pro','ÉÅÉCÉäÉI',Meiryo,'ÇlÇr ÇoÉSÉVÉbÉN',sans-serif;
+	font-weight: bold;
+	font-size: 15px;
+}
+
+#logo a {
+	display: block;
+	text-decoration: none;
+	color: #000000;
+}
+
+/*-----------------------------*
+ * Menu
+ *-----------------------------*/
+#menu {
+	float: right;
+	padding: 30px 80px 0 0;
+}
+
+#menu p{
+	margin: 0px 0px 0px 0px;
+	text-align:center;
+	font-family: "Franklin Gothic Medium",Arial, Helvetica, sans-serif; 
+	font-weight: normal;
+	font-size: 12.5px;
+}
+
+/* Header line with shadow */
+#menu-line{
+	width: 480px;
+	margin: 20px 10px 0px 10px;
+	border-bottom: 3px solid black;
+	-moz-box-shadow: 3px 3px 4px #000;
+	-webkit-box-shadow: 3px 3px 4px #000;
+	box-shadow: 3px 3px 4px #000;
+	/* For IE 8 */
+	-ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=135, Color='#000000')";
+	/* For IE 5.5 - 7 */
+	filter: progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=135, Color='#000000');
+}
+
+#menu ul {
+	margin: 0px;
+	padding: 8px 0px 0px 0px;
+	list-style: none;
+}
+
+#menu li {
+	display: inline;
+}
+
+#menu a {
+	display: block;
+	float: left;
+	margin-left: 5px;
+	padding: 5px 30px;
+	/**
+	background: #EA8101;
+	border-radius: 10px;
+	border-top: 2px solid #EBEAD1;
+	**/
+	text-decoration: none;
+	text-transform: uppercase;
+	font-family: "Franklin Gothic Medium",Arial, Helvetica, sans-serif; 
+	font-weight: normal;
+	font-size: 15px;
+	color: #000000;
+}
+
+#menu a:hover, .active a {
+}
+
+/*-----------------------------*
+ * Page
+ *-----------------------------*/
+#page {
+	width: 100%;
+	height:900px;
+	margin: 0px auto;
+	padding: 10px 0 0 0;
+	position: relative;
+	
+/* full-sized screen */
+	background: url(../img/bg.jpg) no-repeat center center;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+
+/*-----------------------------*
+ * Contents Message
+ *-----------------------------*/
+#contents-box{
+	width: 530px;
+	height:220px;
+	margin-top: 280px;
+	margin-left:50%;
+	padding: 10px 10px 10px 10px;
+}
+
+#content1{
+	position:relative;
+	float:right;
+	width: 450px;
+	height:65px;
+	padding: 0;
+	background:#ffffff;
+	
+	border-bottom: 3px solid black;
+	-moz-box-shadow: 3px 3px 4px #000;
+	-webkit-box-shadow: 3px 3px 4px #000;
+	box-shadow: 3px 3px 4px #000;
+	/* For IE 8 */
+	-ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=135, Color='#000000')";
+	/* For IE 5.5 - 7 */
+	filter: progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=135, Color='#000000');
+	z-index:5;
+}
+
+#content1 img{
+	padding: 10px;
+	float:right;
+}
+
+#content2{
+	position:relative;
+	float:right;
+	width: 515px;
+	height:115px;
+	padding: 0;
+	margin-top:10px;
+	background:#ffffff;
+	
+	border-bottom: 3px solid black;
+	-moz-box-shadow: 3px 3px 4px #000;
+	-webkit-box-shadow: 3px 3px 4px #000;
+	box-shadow: 3px 3px 4px #000;
+	/* For IE 8 */
+	-ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=135, Color='#000000')";
+	/* For IE 5.5 - 7 */
+	filter: progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=135, Color='#000000');
+	z-index:5;
+}
+
+#content2 img{
+	padding: 10px;
+	float:right;
+}
+
+/*-----------------------------*
+ * CSS3 gallery content
+ *-----------------------------*/
+#gallery-box{
+	position:relative;
+	width: 100%;
+	height:440px; /** valiable **/
+	margin-top:-60px;
+	background-color:rgba(0,0,0,0.8); 
+	z-index:3;
+}
+
+.dg-wrapper{
+	width: 481px;
+	height: 316px;
+	margin: 0 auto;
+	position: relative;
+	-webkit-transform-style: preserve-3d;
+	-moz-transform-style: preserve-3d;
+	-o-transform-style: preserve-3d;
+	-ms-transform-style: preserve-3d;
+	transform-style: preserve-3d;
+	-webkit-perspective: 1000px;
+	-moz-perspective: 1000px;
+	-o-perspective: 1000px;
+	-ms-perspective: 1000px;
+	perspective: 1000px;
+}
+
+.dg-wrapper a{
+	width: 482px;
+	height: 316px;
+	display: block;
+	position: absolute;
+	left: 0;
+	top: 20%;
+	background: transparent url(../img/3Dgallery/browser.png) no-repeat top left;
+}
+
+.dg-wrapper a.dg-transition{
+	-webkit-transition: all 0.5s ease-in-out;
+	-moz-transition: all 0.5s ease-in-out;
+	-o-transition: all 0.5s ease-in-out;
+	-ms-transition: all 0.5s ease-in-out;
+	transition: all 0.5s ease-in-out;
+}
+
+.dg-wrapper a img{
+	display: block;
+	padding: 41px 0px 0px 1px;
+}
+
+.dg-wrapper a div{
+	text-align: center;
+	line-height: 50px;
+	font-size: 16px;
+	width: 100%;
+	bottom: -55px;
+	display: none;
+	position: absolute;
+	top:40%;
+}
+
+.dg-wrapper a.dg-center div{
+	display: block;
+}
+
+.gallery-box nav{
+	width: 58px;
+	position: absolute;
+	z-index: 1000;
+	bottom: 40px;
+	top: 88%;
+	left: 50%;
+	margin-left: -29px;
+}
+
+.gallery-box nav span{
+	text-indent: -9000px;
+	float: left;
+	cursor:pointer;
+	width: 24px;
+	height: 50px;
+	opacity: 0.8;
+	background: transparent url(../img/3Dgallery/arrows.png) no-repeat top left;
+}
+
+.gallery-box nav span:hover{
+	opacity: 1;
+}
+
+.gallery-box nav span.dg-next{
+	background-position: top right;
+	margin-left: 10px;
+}
+
+/*-----------------------------*
+ * GLOBAL FOOTER
+ *-----------------------------*/
+footer.global{
+	clear:both;
+	width:1020px;
+	margin: 0px auto;
+}
+footer.global #pageTop{
+	text-align:right;
+	padding:20px 0 20px 0;
+	width:978px;
+	height:50px;
+	margin: 0px auto;
+}
+
+footer.global #pageTop #backscroll{
+	width:300px;
+	margin:0px 10px 0 10px;
+	float:right;
+}
+
+footer.global #pageTop #sns{
+	width:500px;
+	margin:10px 10px 0 10px;
+	float:left;
+}
+
+footer.global #pageTop #sns .sns_botton{
+	float:left;
+	padding:0 10px 0 10px;
+}
+
+
+
+footer.global #pageTop a{
+	display: block;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-family: "Franklin Gothic Medium",Arial, Helvetica, sans-serif; 
+	font-weight: normal;
+	font-size: 15px;
+	color: #000000;
+}
+
+
+
+footer.global #footerCont{
+	width:978px;
+	height:73px;
+	font-size:77%;
+	padding:1px;
+}
+footer.global #footerCont ul{
+	background:#F8F8F8 repeat left top;
+	width:978px;
+	height:66px;
+	margin:0;
+	padding-top:7px;
+	overflow:hidden;
+}
+footer.global #footerCont ul li{
+	height:60px;
+	float:left;	
+	width: 256px;
+	padding: 0 35px;
+	
+	font-size: 12.5px;
+	font-weight: normal;
+	color: #000000;
+}
+footer.global #footerCont ul li.ftCompany{
+	height:46px;
+	padding-top:14px;
+}
+footer.global #footerCont ul li.ftAddress{
+	height:46px;
+	padding-top:14px;
+}
+footer.global #footerCont ul li.ftTell{
+	height:43px;
+	padding-top:17px;
+	text-align:center;
+	background: none;
+}
+footer.global #footerCont ul li.ftTell img{
+	margin-bottom:-2px;
+}
+footer.global #footerCont ul li.ftTell a{
+	letter-spacing:0.6px;
+}
+
+footer.global #footerBtm{
+	height:60px;
+	margin-top:25px auto;
+	padding-bottom:20px;
+	position:relative;
+}
+footer.global #footerBtm ul.navi{
+	position:absolute;
+	top:12px;
+	left:0;
+	width:500px;
+	font-size:77%;
+}
+footer.global #footerBtm ul.navi li{
+	background:url(../img/arrow.png) right 15px no-repeat;
+	float:left;
+	margin-right:16px;
+	padding-right:9px;
+	padding-top:8px;
+	letter-spacing:1px;
+}
+footer.global #footerBtm ul.navi li a{
+	display: block;
+	text-decoration: none;
+}
+
+footer.global #footerBtm #copyright{
+	position:absolute;
+	top:19px;
+	right:0;
+	font-family: "Franklin Gothic Medium",Arial, Helvetica, sans-serif; 
+	font-weight: normal;
+	font-size: 12.5px;
+}
+
+#footer-line{
+	width:1020px;
+	margin: 20px 0px 20px 0px;
+	border-bottom: 5px solid black;
+	-moz-box-shadow: 3px 3px 4px #000;
+	-webkit-box-shadow: 3px 3px 4px #000;
+	box-shadow: 3px 3px 4px #000;
+	/* For IE 8 */
+	-ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=135, Color='#000000')";
+	/* For IE 5.5 - 7 */
+	filter: progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=135, Color='#000000');
+}
+
+/* Footer */
+
+#wrapper2 {
+}
+
+#footer {
+	width: 940px;
+	margin: 0 auto;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	text-transform: uppercase;
+	color: #FFFFFF;
+}
+
+#footer a {
+	text-decoration: none;
+	font-size: 10px;
+}
+
+#legal {
+	clear: both;
+	margin: 0;
+	padding: 10px 0;
+	text-align: center;
+	font-size: 10px;
+	color: #525252;
+}
+
+#legal a {
+	border-bottom: 1px dotted #939393;
+	text-decoration: none;
+}
