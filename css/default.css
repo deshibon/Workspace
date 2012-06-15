@@ -249,6 +249,14 @@ hr {
 	z-index:3;
 }
 
+.sub-gallery-box{
+	position:relative;
+	width: 1000px;
+	height:440px;
+	margin: 0 auto;
+	/*background:#ccffcc;*/
+}
+
 .dg-wrapper{
 	width: 481px;
 	height: 316px;
@@ -273,7 +281,8 @@ hr {
 	position: absolute;
 	left: 0;
 	top: 20%;
-	background: transparent url(../img/3Dgallery/browser.png) no-repeat top left;
+	/*background: transparent url(../img/3Dgallery/browser.png) no-repeat top left;*/
+	box-shadow: 0px 10px 20px rgba(216,216,216,0.3);
 }
 
 .dg-wrapper a.dg-transition{
@@ -286,18 +295,20 @@ hr {
 
 .dg-wrapper a img{
 	display: block;
-	padding: 41px 0px 0px 1px;
+	/*padding: 41px 0px 0px 1px;*/
 }
 
 .dg-wrapper a div{
+	font-style: italic;
 	text-align: center;
 	line-height: 50px;
-	font-size: 16px;
+	text-shadow: 1px 1px 1px rgba(255,255,255,0.5);
+	color: #ffffff;
+	font-size: 18px;
 	width: 100%;
 	bottom: -55px;
 	display: none;
 	position: absolute;
-	top:40%;
 }
 
 .dg-wrapper a.dg-center div{
@@ -305,23 +316,25 @@ hr {
 }
 
 .gallery-box nav{
-	width: 58px;
+	/*width: 58px;
 	position: absolute;
 	z-index: 1000;
 	bottom: 40px;
 	top: 88%;
 	left: 50%;
 	margin-left: -29px;
+	background:#9400D3;*/
 }
 
 .gallery-box nav span{
-	text-indent: -9000px;
-	float: left;
+	position:absolute;
 	cursor:pointer;
 	width: 24px;
 	height: 50px;
 	opacity: 0.8;
-	background: transparent url(../img/3Dgallery/arrows.png) no-repeat top left;
+	background: transparent url(../img/3Dgallery/arrow-prev.png) no-repeat top left;
+	top: 190px;
+	left:15px;
 }
 
 .gallery-box nav span:hover{
@@ -329,8 +342,9 @@ hr {
 }
 
 .gallery-box nav span.dg-next{
-	background-position: top right;
-	margin-left: 10px;
+	background: transparent url(../img/3Dgallery/arrow-next.png) no-repeat top left;
+	left:960px;
+}
 }
 
 /*-----------------------------*
